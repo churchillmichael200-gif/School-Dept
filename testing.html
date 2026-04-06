@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    color: #0a3d62;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 18px;
+    border: none;
+    background: #e2e8f0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: #0a3d62;
+    color: white;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-code {
+    background: #0a3d62;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    width: 4vw;
+}
+
+.course-info span {
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+
+.course-level {
+    display: none;
+}
+
+.course-level.active {
+    display: block;
+}
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .tabs {
+        gap: 6px;
+    }
+
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .courses {
+        grid-template-columns: 1fr; /* 1 card per row */
+        gap: 15px;
+    }
+
+    .course-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .course-card h3 {
+        font-size: 16px;
+    }
+
+    .course-info span {
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Computer Science Department</h1>
+    <p>Available Courses</p>
+</header>
+
+<div class="container">
+
+<div class="title">
+    <h2>Our Courses</h2>
+</div>
+
+<div class="tabs">
+    <button class="tab-btn active" onclick="showLevel('level100')">100 Level</button>
+    <button class="tab-btn" onclick="showLevel('level200')">200 Level</button>
+    <button class="tab-btn" onclick="showLevel('level300')">300 Level</button>
+</div>
+
+<!-- ================= 100 LEVEL ================= -->
+<div id="level100" class="course-level active">
+<div class="courses">
+
+<div class="course-card"><span class="course-code">CSC101</span><h3>Intro to CS</h3><p>Basics of computing.</p><div class="course-info"><span>Lecturer: Dr. John Smith</span></div></div>
+<div class="course-card"><span class="course-code">CSC102</span><h3>Programming I</h3><p>Intro to coding.</p><div class="course-info"><span>Lecturer: Mr. Paul James</span></div></div>
+<div class="course-card"><span class="course-code">CSC103</span><h3>Computer Fundamentals</h3><p>Hardware basics.</p><div class="course-info"><span>Lecturer: Mrs. Linda Green</span></div></div>
+<div class="course-card"><span class="course-code">MTH101</span><h3>Discrete Math</h3><p>Math for CS.</p><div class="course-info"><span>Lecturer: Dr. White</span></div></div>
+<div class="course-card"><span class="course-code">PHY101</span><h3>Physics I</h3><p>Intro physics.</p><div class="course-info"><span>Lecturer: Dr. Brown</span></div></div>
+<div class="course-card"><span class="course-code">GST101</span><h3>Use of English</h3><p>Communication skills.</p><div class="course-info"><span>Lecturer: Mrs. Adams</span></div></div>
+<div class="course-card"><span class="course-code">CSC104</span><h3>Logic Design</h3><p>Basic logic circuits.</p><div class="course-info"><span>Lecturer: Mr. Cole</span></div></div>
+<div class="course-card"><span class="course-code">STA101</span><h3>Statistics I</h3><p>Intro stats.</p><div class="course-info"><span>Lecturer: Dr. King</span></div></div>
+<div class="course-card"><span class="course-code">CSC104</span><h3>Logic Design</h3><p>Basic logic circuits.</p><div class="course-info"><span>Lecturer: Mr. Cole</span></div></div>
+<div class="course-card"><span class="course-code">STA101</span><h3>Statistics I</h3><p>Intro stats.</p><div class="course-info"><span>Lecturer: Dr. King</span></div></div>
+<div class="course-card"><span class="course-code">CSC102</span><h3>Programming I</h3><p>Intro to coding.</p><div class="course-info"><span>Lecturer: Mr. Paul James</span></div></div>
+<div class="course-card"><span class="course-code">CSC103</span><h3>Computer Fundamentals</h3><p>Hardware basics.</p><div class="course-info"><span>Lecturer: Mrs. Linda Green</span></div></div>
+</div>
+</div>
+
+<!-- ================= 200 LEVEL ================= -->
+<div id="level200" class="course-level">
+<div class="courses">
+
+<div class="course-card"><span class="course-code">CSC201</span><h3>Programming II</h3><p>Advanced coding.</p><div class="course-info"><span>Lecturer: Mr. Paul</span></div></div>
+<div class="course-card"><span class="course-code">CSC202</span><h3>Data Structures</h3><p>Efficient data.</p><div class="course-info"><span>Lecturer: Mrs. Grace</span></div></div>
+<div class="course-card"><span class="course-code">CSC203</span><h3>Computer Org</h3><p>System design.</p><div class="course-info"><span>Lecturer: Mr. Cole</span></div></div>
+<div class="course-card"><span class="course-code">CSC204</span><h3>Operating Systems</h3><p>OS basics.</p><div class="course-info"><span>Lecturer: Dr. Black</span></div></div>
+<div class="course-card"><span class="course-code">CSC205</span><h3>Web Dev</h3><p>Build websites.</p><div class="course-info"><span>Lecturer: Ms. Anita</span></div></div>
+<div class="course-card"><span class="course-code">MTH201</span><h3>Linear Algebra</h3><p>Math tools.</p><div class="course-info"><span>Lecturer: Dr. White</span></div></div>
+<div class="course-card"><span class="course-code">STA201</span><h3>Statistics II</h3><p>Advanced stats.</p><div class="course-info"><span>Lecturer: Dr. King</span></div></div>
+<div class="course-card"><span class="course-code">CSC206</span><h3>Software Eng</h3><p>Dev process.</p><div class="course-info"><span>Lecturer: Mr. Stone</span></div></div>
+
+</div>
+</div>
+
+<!-- ================= 300 LEVEL ================= -->
+<div id="level300" class="course-level">
+<div class="courses">
+
+<div class="course-card"><span class="course-code">CSC301</span><h3>DB Systems</h3><p>SQL & DB design.</p><div class="course-info"><span>Lecturer: Mr. Lee</span></div></div>
+<div class="course-card"><span class="course-code">CSC302</span><h3>AI</h3><p>Machine learning.</p><div class="course-info"><span>Lecturer: Dr. Sarah</span></div></div>
+<div class="course-card"><span class="course-code">CSC303</span><h3>Networks</h3><p>Networking basics.</p><div class="course-info"><span>Lecturer: Mr. Adams</span></div></div>
+<div class="course-card"><span class="course-code">CSC304</span><h3>Cyber Security</h3><p>Security basics.</p><div class="course-info"><span>Lecturer: Dr. White</span></div></div>
+<div class="course-card"><span class="course-code">CSC305</span><h3>Mobile Dev</h3><p>Apps development.</p><div class="course-info"><span>Lecturer: Ms. Joy</span></div></div>
+<div class="course-card"><span class="course-code">CSC306</span><h3>Cloud Computing</h3><p>Cloud tech.</p><div class="course-info"><span>Lecturer: Mr. Cloud</span></div></div>
+<div class="course-card"><span class="course-code">CSC307</span><h3>Data Science</h3><p>Data analysis.</p><div class="course-info"><span>Lecturer: Dr. Data</span></div></div>
+<div class="course-card"><span class="course-code">CSC308</span><h3>Project</h3><p>Final system build.</p><div class="course-info"><span>Lecturer: Panel</span></div></div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+function showLevel(levelId) {
+    document.querySelectorAll('.course-level').forEach(level => {
+        level.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    document.getElementById(levelId).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

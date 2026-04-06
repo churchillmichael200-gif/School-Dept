@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Information</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png.png" type="image/x-icon">
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+        }
+
+        /* HEADER */
+        .header {
+            background: #2563eb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* LIST */
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        ul li i {
+            color: #2563eb;
+            margin-right: 10px;
+        }
+
+ /* ===================================================== */
+/* ===== FOOTER ===== */
+.footer {
+    background:#1e293b;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var( 0.15s ease-in-out);
+}
+
+.footer-section ul li a:hover {
+    color: var(#06b6d4);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    transition: color var(0.15s ease-in-out);
+}
+
+.social-links a:hover {
+    color: var(#06b6d4);
+}
+.delphine:hover {
+    color: #06b6d4;
+}
+
+       
+    </style>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Computer Science Department</h1>
+        <p>Ifatoss University</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <!-- ABOUT -->
+        <div class="card">
+            <h2>About the Department</h2>
+            <p>
+                The Computer Science Department at Ifatoss University is committed to providing
+                high-quality education in software development, data science, cybersecurity,
+                and modern computing technologies.
+            </p>
+        </div>
+
+        <!-- MISSION & VISION -->
+        <div class="grid">
+
+            <div class="card">
+                <h2>Mission</h2>
+                <p>
+                    To train students with practical and theoretical knowledge to solve
+                    real-world technological problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Vision</h2>
+                <p>
+                    To become a leading department in innovation, research, and technology development.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- PROGRAMS -->
+        <div class="card">
+            <h2>Programs Offered</h2>
+            <ul>
+                <li><i class="fas fa-code"></i> Software Engineering</li>
+                <li><i class="fas fa-database"></i> Data Science</li>
+                <li><i class="fas fa-shield-alt"></i> Cyber Security</li>
+                <li><i class="fas fa-network-wired"></i> Networking</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="card">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>
+                    <a href="tel:+22956141425">
+                        <i class="fas fa-phone"></i> +229 (01) 561-41425
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:IfatossUniversity@gmail.com">
+                        <i class="fas fa-envelope"></i> IfatossUniversity@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> Ifatoss University
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+ <!-- 🦶 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Computer Science Department</h3>
+                    <p>Empowering students with cutting-edge technology and innovative learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Courses.html" class="delphine">Courses</a></li>
+                        <li><a href="lecturers.html" class="delphine">Lecturers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"><a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank"  class="delphine"></i> Ifatoss University Campus</a></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+22956141425" class="delphine">+229 (01) 561-41425</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:IfatossUniversity@gmail.com" class="delphine">IfatossUniversity@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Computer Science Department. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook delphine"></i></a>
+                    <a href="#"><i class="fab fa-twitter delphine"></i></a>
+                    <a href="https://www.tiktok.com/@ifatossblog?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok delphine"></i></a>
+                    <a href="#"><i class="fab fa-linkedin delphine"></i></a>
+                    <a href="https://github.com/churchillmichael200-gif"><i class="fab fa-github delphine"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

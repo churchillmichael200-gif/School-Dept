@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Department Timetable</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="icon" href="images/logo.png.png" type="image/x-icon">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.container {
+    width: 95%;
+    margin: 30px auto;
+}
+
+/* Section Title */
+.section-title {
+    margin: 30px 0 10px;
+    color: #0a3d62;
+    font-weight: bold;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 30px;
+    min-width: 900px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #0a3d62;
+    color: white;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #f9f9f9;
+}
+
+/* Break column */
+.break {
+    background: #eee;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 3px;
+}
+
+/* Course styling */
+.course {
+    font-weight: bold;
+    color: #0a3d62;
+}
+
+.lecturer {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Hover */
+tr:hover td {
+    background: #f1f7ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+ /* ===================================================== */
+/* ===== FOOTER ===== */
+.footer {
+    background:#1e293b;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var( 0.15s ease-in-out);
+}
+
+.footer-section ul li a:hover {
+    color: var(#06b6d4);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    transition: color var(0.15s ease-in-out);
+}
+
+.social-links a:hover {
+    color: var(#06b6d4);
+}
+.delphine:hover {
+    color: #06b6d4;
+}
+</style>
+<body>
+
+<header>
+    <h2>Computer Science Department</h2>
+    <p>Second Semester Timetable</p>
+</header>
+
+<div class="container">
+
+<!-- 100 LEVEL -->
+<h3 class="section-title">100 Level</h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Days</th>
+<th>8-10am</th>
+<th>10-12pm</th>
+<th>12-1pm</th>
+<th>1-3pm</th>
+<th>3-5pm</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Monday</td>
+<td></td>
+<td><div class="course">GNS 124</div><div class="lecturer">Mr. Bisirice</div></td>
+<td class="break" rowspan="5">BREAK</td>
+<td><div class="course">GNS 102</div><div class="lecturer">Dr. James</div></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td><div class="course">MTH 142</div><div class="lecturer">Dr. James</div></td>
+<td><div class="course">SOC 102</div><div class="lecturer">Dr. Smith</div></td>
+<td><div class="course">GNS 128</div><div class="lecturer">Mr. Johnson</div></td>
+<td><div class="course">GNS 126</div><div class="lecturer">Dr. Williams</div></td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td><div class="course">CSC 120</div><div class="lecturer">Dr. Brown</div></td>
+<td><div class="course">CSC 122</div><div class="lecturer">Prof. Davis</div></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td></td>
+<td></td>
+<td><div class="course">PHY 114</div><div class="lecturer">Dr. James</div></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td><div class="course">FRN 102</div><div class="lecturer">Dr. James</div></td>
+<td></td>
+<td>Jumat & Fellowship</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- 200 LEVEL -->
+<h3 class="section-title">200 Level</h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Days</th>
+<th>8-10am</th>
+<th>10-12pm</th>
+<th>12-1pm</th>
+<th>1-3pm</th>
+<th>3-5pm</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Monday</td>
+<td><div class="course">CSC 240</div><div class="lecturer">Dr. James</div></td>
+<td></td>
+<td class="break" rowspan="5">BREAK</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td></td>
+<td><div class="course">CSC 228</div><div class="lecturer">Dr. Joy</div></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td><div class="course">CSC 232</div><div class="lecturer">Dr. Brown</div></td>
+<td><div class="course">ENT 224</div><div class="lecturer">Prof. Davis</div></td>
+<td><div class="course">CSC 224</div><div class="lecturer">Dr. James</div></td>
+<td><div class="course">CSC 236</div><div class="lecturer">Dr. Williams</div></td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td><div class="course">CSC 226</div><div class="lecturer">Dr. James</div></td>
+<td><div class="course">SOE 232</div><div class="lecturer">Prof. Davis</div></td>
+<td><div class="course">CSC 222</div><div class="lecturer">Dr. Williams</div></td>
+<td><div class="course">CSC 248</div><div class="lecturer">Dr. James</div></td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td></td>
+<td><div class="course">FRN 202</div><div class="lecturer">Dr. James</div></td>
+<td>Jumat & Fellowship</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 300 LEVEL -->
+<h3 class="section-title">300 Level</h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Days</th>
+<th>8-10am</th>
+<th>10-12pm</th>
+<th>12-1pm</th>
+<th>1-3pm</th>
+<th>3-5pm</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Monday</td>
+<td><div class="course">CSC 240</div><div class="lecturer">Dr. James</div></td>
+<td></td>
+<td class="break" rowspan="5">BREAK</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td></td>
+<td><div class="course">CSC 228</div><div class="lecturer">Dr. Joy</div></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td><div class="course">CSC 232</div><div class="lecturer">Dr. Brown</div></td>
+<td><div class="course">ENT 224</div><div class="lecturer">Prof. Davis</div></td>
+<td><div class="course">CSC 224</div><div class="lecturer">Dr. James</div></td>
+<td><div class="course">CSC 236</div><div class="lecturer">Dr. Williams</div></td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td><div class="course">CSC 226</div><div class="lecturer">Dr. James</div></td>
+<td><div class="course">SOE 232</div><div class="lecturer">Prof. Davis</div></td>
+<td><div class="course">CSC 222</div><div class="lecturer">Dr. Williams</div></td>
+<td><div class="course">CSC 248</div><div class="lecturer">Dr. James</div></td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td></td>
+<td><div class="course">FRN 202</div><div class="lecturer">Mrs Violette</div></td>
+<td>Jumat & Fellowship</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+ <!-- 🦶 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Computer Science Department</h3>
+                    <p>Empowering students with cutting-edge technology and innovative learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#courses" class="delphine">Courses</a></li>
+                        <li><a href="#lecturers" class="delphine">Lecturers</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"><a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank"  class="delphine"></i> Ifatoss University Campus</a></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+22956141425" class="delphine">+229 (01) 561-41425</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:IfatossUniversity@gmail.com" class="delphine">IfatossUniversity@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Computer Science Department. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook delphine"></i></a>
+                     <a href="https://www.tiktok.com/@ifatossblog?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok delphine" ></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter delphine"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin delphine"></i></a>
+                    <a href="https://github.com/churchillmichael200-gif" target="_blank"><i class="fab fa-github delphine"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -4,305 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department Of Computer Science</title>
+    
+
     <link rel="stylesheet" href="Dept.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- ✅ FIXED favicon -->
+    <link rel="icon" href="images/logo.png.png" type="image/x-icon">
 </head>
+
 <body>
-    <!-- 🔝 HEADER -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h2>Computer Science Dept</h2>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-                        <li class="nav-item"><a href="#lecturers" class="nav-link">Lecturers</a></li>
-                        <li class="nav-item"><a href="#dept" class="nav-link">Dept Info</a></li>
-                    </ul>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+
+<!-- 🔝 HEADER -->
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Computer Science Dept</h2>
             </div>
-        </nav>
-    </header>
 
-    <!-- 🚀 HERO SECTION -->
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="hero-title-main">Computer Science</span>
-                        <span class="hero-title-sub">Portal</span>
-                    </h1>
-                    <p class="hero-description">
-                        Access courses, lectures, and department information with ease.
-                        Your gateway to academic excellence in computer science.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#courses" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i>
-                            Get Started
-                        </a>
-                        <a href="#about" class="btn btn-secondary">
-                            <i class="fas fa-info-circle"></i>
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-illustration">
-                        <i class="fas fa-code"></i>
-                        <i class="fas fa-laptop-code"></i>
-                        <i class="fas fa-database"></i>
-                    </div>
-                </div>
+            <!-- ✅ NAV MENU -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="Courses.html" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="lecturers.html" class="nav-link">Lecturers</a></li>
+                    <li class="nav-item"><a href="DeptInfo.html" class="nav-link">Department Info</a></li>
+                </ul>
             </div>
-        </section>
 
-        <!-- ⚡ QUICK ACTIONS -->
-        <section class="quick-actions">
-            <div class="container">
-                <h2 class="section-title">Quick Access</h2>
-                <div class="actions-grid">
-                    <div class="action-card" data-action="courses">
-                        <div class="card-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h3>Courses</h3>
-                        <p>Browse available courses and curriculum</p>
-                    </div>
-                    <div class="action-card" data-action="lecturers">
-                        <div class="card-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <h3>Lecturers</h3>
-                        <p>Meet our faculty Lecturers</p>
-                    </div>
-                    <div class="action-card" data-action="timetable">
-                        <div class="card-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <h3>Timetable</h3>
-                        <p>View class schedules</p>
-                    </div>
-                    <div class="action-card" data-action="cgpa-planner">
-                        <div class="card-icon">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <h3>CGPA Planner</h3>
-                        <p>Plan and track your academic progress</p>
-                    </div>
+            <!-- MOBILE MENU -->
+            <!-- <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div> -->
 
-                </div>
+        </div>
+    </nav>
+</header>
+
+<!-- 🚀 HERO -->
+<main>
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-content">
+
+            <h1 class="hero-title">
+                <span class="hero-title-main">Computer Science</span>
+                <span class="hero-title-sub">Portal</span>
+            </h1>
+
+            <p class="hero-description">
+                Access courses, lectures, and department information with ease.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Get Started
+                </a>
+
+                <!-- ✅ FIXED -->
+                <a href="DeptInfo.html" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
             </div>
-        </section>
 
-        <!-- 📚 COURSES SECTION -->
-        <section class="courses-section" id="courses">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Our Courses</h2>
-                    <button class="btn btn-outline" id="show-more-courses">
-                        <i class="fas fa-plus"></i>
-                        View All Courses
-                    </button>
-                </div>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <div class="course-header">
-                            <div class="course-code">CSC101</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Introduction to Programming</h3>
-                        <p>Learn the fundamentals of programming with Python. Perfect for beginners.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 45 hours</span>
-                            <span><i class="fas fa-users"></i> 30 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-header">
-                            <div class="course-code">CSC202</div>
-                            <div class="course-credits">4 Credits</div>
-                        </div>
-                        <h3>Data Structures & Algorithms</h3>
-                        <p>Master essential data structures and algorithmic thinking.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 60 hours</span>
-                            <span><i class="fas fa-users"></i> 25 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-header">
-                            <div class="course-code">CSC303</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>Build modern web applications using HTML, CSS, and JavaScript.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 50 hours</span>
-                            <span><i class="fas fa-users"></i> 28 students</span>
-                        </div>
-                    </div>
+        </div>
 
-                    <!-- Additional courses (initially hidden) -->
-                    <div class="course-card hidden">
-                        <div class="course-header">
-                            <div class="course-code">CSC304</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Database Systems</h3>
-                        <p>Learn database design, SQL, and modern database technologies.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 55 hours</span>
-                            <span><i class="fas fa-users"></i> 32 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card hidden">
-                        <div class="course-header">
-                            <div class="course-code">CSC305</div>
-                            <div class="course-credits">4 Credits</div>
-                        </div>
-                        <h3>Computer Networks</h3>
-                        <p>Understanding network protocols, architecture, and security.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 65 hours</span>
-                            <span><i class="fas fa-users"></i> 27 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card hidden">
-                        <div class="course-header">
-                            <div class="course-code">CSC401</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Software Engineering</h3>
-                        <p>Learn modern software development methodologies and practices.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 50 hours</span>
-                            <span><i class="fas fa-users"></i> 24 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card hidden">
-                        <div class="course-header">
-                            <div class="course-code">CSC402</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Operating Systems</h3>
-                        <p>Deep dive into OS concepts, process management, and system programming.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 60 hours</span>
-                            <span><i class="fas fa-users"></i> 22 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card hidden">
-                        <div class="course-header">
-                            <div class="course-code">CSC403</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Mobile App Development</h3>
-                        <p>Build native and cross-platform mobile applications.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 55 hours</span>
-                            <span><i class="fas fa-users"></i> 26 students</span>
-                        </div>
-                    </div>
-                    <div class="course-card hidden">
-                        <div class="course-header">
-                            <div class="course-code">CSC403</div>
-                            <div class="course-credits">3 Credits</div>
-                        </div>
-                        <h3>Mobile App Development</h3>
-                        <p>Build native and cross-platform mobile applications.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-clock"></i> 55 hours</span>
-                            <span><i class="fas fa-users"></i> 26 students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 🧑‍🏫 LECTURERS SECTION -->
-        <section class="lecturers-section" id="lecturers">
-            <div class="container">
-                <h2 class="section-title">Meet Our Lecturers</h2>
-                <div class="lecturers-grid">
-                    <div class="lecturer-card">
-                        <div class="lecturer-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="lecturer-info">
-                            <h3>Dr. John Smith</h3>
-                            <p class="lecturer-title">Professor of Computer Science</p>
-                            <p class="lecturer-specialty">Specializes in Artificial Intelligence and Machine Learning</p>
-                            <div class="lecturer-contact">
-                                <a href="mailto:john.smith@university.edu"><i class="fas fa-envelope"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lecturer-card">
-                        <div class="lecturer-avatar">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <div class="lecturer-info">
-                            <h3>Prof. Mary Johnson</h3>
-                            <p class="lecturer-title">Associate Professor</p>
-                            <p class="lecturer-specialty">Expert in Software Engineering and System Design</p>
-                            <div class="lecturer-contact">
-                                <a href="mailto:mary.johnson@university.edu"><i class="fas fa-envelope"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- 🦶 FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Computer Science Department</h3>
-                    <p>Empowering students with cutting-edge technology and innovative learning experiences.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#lecturers">Lecturers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Ifatoss University Campus</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> Ifatoss university.edu</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Computer Science Department. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <i class="fas fa-code"></i>
+                <i class="fas fa-laptop-code"></i>
+                <i class="fas fa-database"></i>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="Dept_new.js"></script>
+<!-- ⚡ QUICK ACTIONS -->
+<section class="quick-actions">
+    <div class="container">
+        <h2 class="section-title">Quick Access</h2>
+
+        <div class="actions-grid">
+
+     <a href="lecturers.html" style="text-decoration: none; color: inherit;">
+  <div class="action-card" data-action="lecturers">
+    <div class="card-icon">
+      <i class="fas fa-chalkboard-teacher"></i>
+    </div>
+    <h3>Lecturers</h3>
+    <p>Meet our faculty Lecturers</p>
+  </div>
+</a>
+            <a href="Timetable.html" style="text-decoration: none; color: inherit;">
+            <div class="action-card" data-action="timetable">
+                <div class="card-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Timetable</h3>
+                <p>View class schedules</p>
+            </div>
+            </a>
+            <a href="CGPAPlanner.html" style="text-decoration: none; color: inherit;">
+            <div class="action-card" data-action="cgpa-planner">
+                <div class="card-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3>CGPA Planner</h3>
+                <p>Track your academic progress</p>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 📚 COURSES -->
+<section class="courses-section" id="courses">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-title">Our Courses</h2>
+
+            <!-- ✅ REDIRECT BUTTON -->
+              <a href="Courses.html" style="text-decoration: none; color: inherit;">
+            <button class="btn btn-outline" id="view-courses">
+                <i class="fas fa-plus"></i>
+                View All Courses
+            </button>
+        </div>
+        </a>
+        <div class="courses-grid">
+
+            <div class="course-card">
+                <div class="course-header">
+                    <div class="course-code">CSC101</div>
+                    <div class="course-credits">3 Credits</div>
+                </div>
+                <h3>Introduction to Programming</h3>
+                <p>Learn Python fundamentals.</p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <div class="course-code">CSC202</div>
+                    <div class="course-credits">3 Credits</div>
+                </div>
+                <h3>Data Structures</h3>
+                <p>Master algorithms and structures.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- 🦶 FULL FOOTER (RESTORED) -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3>Computer Science Department</h3>
+                <p>Empowering students with cutting-edge technology.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="lecturers.html">Lecturers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"> <a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank"></i> Ifatoss University Campus</a></li>
+                    <li><i class="fas fa-phone"></i><a href="tel:+22956141425"> +229 (01) 561-41425</a></li>
+                    <li><i class="fas fa-envelope"><a href="mailto:IfatossUniversity@gmail.com"></i>IfatossUniversity@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Computer Science Department</p>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@ifatossblog?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/churchillmichael200-gif"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="Dept.js"></script>
 </body>
 </html>

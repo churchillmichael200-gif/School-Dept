@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA Planner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+    color: #2563eb;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #2563eb, #06b6d4);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: white;
+    color: #2563eb;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FEATURES */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card i {
+    font-size: 30px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta a {
+    background: #2563eb;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* ===================================================== */
+/* ===== FOOTER ===== */
+.footer {
+    background:#1e293b;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var( 0.15s ease-in-out);
+}
+
+.footer-section ul li a:hover {
+    color: var(#06b6d4);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    transition: color var(0.15s ease-in-out);
+}
+
+.social-links a:hover {
+    color: var(#06b6d4);
+}
+
+.delphine:hover {
+    color: #06b6d4;
+}
+
+</style>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>CGPA Planner</h2>
+    <a href="https://unipilot-project-mvp.vercel.app/" target="_blank">Open App</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Plan Your CGPA Smartly</h1>
+    <p>This CGPA planner is Created and Designed by <a href="https://github.com/Ajiikn" target="_blank">Ajjikn</a></p>
+
+    <a href="https://unipilot-project-mvp.vercel.app/" target="_blank" class="btn-main">
+        <i class="fas fa-external-link-alt"></i> Try It Live
+    </a>
+</div>
+
+<!-- FEATURES -->
+<div class="container">
+    <div class="features">
+
+        <div class="card">
+            <i class="fas fa-calculator"></i>
+            <h3>Accurate Calculation</h3>
+            <p>Instant CGPA calculation with zero stress.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Track Progress</h3>
+            <p>Visualize your academic improvement.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-bullseye"></i>
+            <h3>Goal Setting</h3>
+            <p>Set your target CGPA and achieve it.</p>
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Start Using It Now 🚀</h2>
+        <br>
+        <a href="https://unipilot-project-mvp.vercel.app/" target="_blank">
+            Open CGPA Planner
+        </a>
+    </div>
+</div>
+
+ <!-- 🦶 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Computer Science Department</h3>
+                    <p>Empowering students with cutting-edge technology and innovative learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#courses" class="delphine">Courses</a></li>
+                        <li><a href="#lecturers" class="delphine">Lecturers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank"  class="delphine">Ifatoss University Campus</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+22956141425" class="delphine">+229 561 41425</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:IfatossUniversity@gmail.com" class="delphine">IfatossUniversity@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Computer Science Department. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook delphine" ></i></a>
+                    <a href="https://www.tiktok.com/@ifatossblog?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok delphine" ></i></a>
+                     <a href="#"><i class="fab fa-twitter delphine" ></i></a>
+                    <a href="#"><i class="fab fa-linkedin delphine"></i></a>
+                    <a href="https://github.com/churchillmichael200-gif"><i class="fab fa-github delphine"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

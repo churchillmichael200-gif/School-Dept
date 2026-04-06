@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png.png" type="image/x-icon">
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+        }
+
+        /* Header */
+        header {
+            background: #0a3d62;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        /* Section Title */
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h2 {
+            color: #0a3d62;
+            font-size: 28px;
+        }
+
+        /* Grid */
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Course Card */
+        .course-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .course-code {
+            background: #0a3d62;
+            color: white;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .course-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .course-info {
+            margin-top: 15px;
+        }
+
+        .course-info span {
+            display: block;
+            font-size: 13px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+
+        /* Responsive tweaks */
+        @media (max-width: 600px) {
+            .title h2 {
+                font-size: 22px;
+            }
+
+            .course-card {
+                padding: 20px;
+            }
+        }
+
+
+ /* ===================================================== */
+/* ===== FOOTER ===== */
+.footer {
+    background:#1e293b;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var( 0.15s ease-in-out);
+}
+
+.footer-section ul li a:hover {
+    color: var(#06b6d4);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    transition: color var(0.15s ease-in-out);
+}
+
+.social-links a:hover {
+    color: var(#06b6d4);
+}
+
+.delphine:hover {
+    color: #06b6d4;
+}
+</style>
+
+
+<body>
+
+    <header>
+        <h1>Computer Science Department</h1>
+        <p>Available Courses</p>
+    </header>
+
+    <div class="container">
+
+        <div class="title">
+            <h2>Our Courses</h2>
+        </div>
+
+        <div class="courses">
+
+            <div class="course-card">
+                <span class="course-code">CSC101</span>
+                <h3>Introduction to Computer Science</h3>
+                <p>This course introduces the basic concepts of computing, problem solving, and programming fundamentals.</p>
+                <div class="course-info">
+                    <span>Lecturer: Dr. John Smith</span>
+                    <span>Units: 3</span>
+                    <span>Semester: First</span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <span class="course-code">CSC202</span>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Focuses on efficient data organization, algorithm design, and problem-solving techniques.</p>
+                <div class="course-info">
+                    <span>Lecturer: Mrs. Grace Adams</span>
+                    <span>Units: 3</span>
+                    <span>Semester: Second</span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <span class="course-code">CSC305</span>
+                <h3>Database Management Systems</h3>
+                <p>Covers relational databases, SQL, normalization, and database design principles.</p>
+                <div class="course-info">
+                    <span>Lecturer: Mr. Daniel Lee</span>
+                    <span>Units: 2</span>
+                    <span>Semester: First</span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <span class="course-code">CSC410</span>
+                <h3>Artificial Intelligence</h3>
+                <p>Introduction to AI concepts including machine learning, reasoning, and intelligent systems.</p>
+                <div class="course-info">
+                    <span>Lecturer: Dr. Sarah Johnson</span>
+                    <span>Units: 3</span>
+                    <span>Semester: Second</span>
+                </div>
+            </div>
+<div class="course-card">
+                <span class="course-code">CSC101</span>
+                <h3>Introduction to Computer Science</h3>
+                <p>This course introduces the basic concepts of computing, problem solving, and programming fundamentals.</p>
+                <div class="course-info">
+                    <span>Lecturer: Dr. John Smith</span>
+                    <span>Units: 3</span>
+                    <span>Semester: First</span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <span class="course-code">CSC202</span>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Focuses on efficient data organization, algorithm design, and problem-solving techniques.</p>
+                <div class="course-info">
+                    <span>Lecturer: Mrs. Grace Adams</span>
+                    <span>Units: 3</span>
+                    <span>Semester: Second</span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <span class="course-code">CSC305</span>
+                <h3>Database Management Systems</h3>
+                <p>Covers relational databases, SQL, normalization, and database design principles.</p>
+                <div class="course-info">
+                    <span>Lecturer: Mr. Daniel Lee</span>
+                    <span>Units: 2</span>
+                    <span>Semester: First</span>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <span class="course-code">CSC410</span>
+                <h3>Artificial Intelligence</h3>
+                <p>Introduction to AI concepts including machine learning, reasoning, and intelligent systems.</p>
+                <div class="course-info">
+                    <span>Lecturer: Dr. Sarah Johnson</span>
+                    <span>Units: 3</span>
+                    <span>Semester: Second</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+     <!-- 🦶 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Computer Science Department</h3>
+                    <p>Empowering students with cutting-edge technology and innovative learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#courses" class="delphine">Courses</a></li>
+                        <li><a href="#lecturers" class="delphine">Lecturers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank"  class="delphine">Ifatoss University Campus</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+22956141425" class="delphine">+229 561 41425</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:IfatossUniversity@gmail.com" class="delphine">IfatossUniversity@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Computer Science Department. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook delphine" ></i></a>
+                    <a href="https://www.tiktok.com/@ifatossblog?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok delphine" ></i></a>
+                     <a href="#"><i class="fab fa-twitter delphine" ></i></a>
+                    <a href="#"><i class="fab fa-linkedin delphine"></i></a>
+                    <a href="https://github.com/churchillmichael200-gif"><i class="fab fa-github delphine"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

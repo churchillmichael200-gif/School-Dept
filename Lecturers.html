@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturers Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png.png" type="image/x-icon">
+</head>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+        }
+
+        header {
+            background: #0a3d62;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .lecturers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #0a3d62;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .info p {
+            color: #555;
+            font-size: 15px;
+            margin: 8px 0;
+        }
+
+        /* Clickable email style */
+        .info a {
+            color: #0a3d62;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+
+/* ===================================================== */
+/* ===== FOOTER ===== */
+.footer {
+    background:#1e293b;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var( 0.15s ease-in-out);
+}
+
+.footer-section ul li a:hover {
+    color: var(#06b6d4);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    transition: color var(0.15s ease-in-out);
+}
+
+.social-links a:hover {
+    color: var(#06b6d4);
+}
+.delphine:hover {
+    color: #06b6d4;
+}
+</style>
+<body>
+
+    <header>
+        <h1>Computer Science Department</h1>
+        <p>Our Lecturers</p>
+    </header>
+
+    <div class="container">
+        <div class="lecturers">
+
+            <div class="card">
+                <img src="images/pic 1.avif" alt="">
+                <h3>Dr. John Smith</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:john@school.com">john@school.com</a> </p>
+                    <p>Phone:<a href="tel:+2348001234567"> +234 800 123 4567</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pic 2.jpg" alt="">
+                <h3>Mrs. Grace Adams</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:grace@school.com">grace@school.com</a></p>
+                    <p>Phone:<a href="tel:+2348012345678"> +234 801 234 5678</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pic 3.jpg" alt="">
+                <h3>Mr. Daniel Lee</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:daniel@school.com">daniel@school.com</a></p>
+                    <p>Phone:<a href="tel:+2348023456789"> +234 802 345 6789</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pic 4.jpg" alt="">
+                <h3>Dr. Sarah Johnson</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:sarah@school.com">sarah@school.com</a></p>
+                    <p>Phone: <a href="tel:+2348034567890"> +234 803 456 7890</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/pic 5.jpg" alt="">
+                <h3>Dr. John Smith</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:john@school.com">john@school.com</a></p>
+                    <p>Phone:<a href="tel:+2348001234567"> +234 800 123 4567</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pic 6.jpg" alt="">
+                <h3>Mrs. Grace Adams</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:grace@school.com">grace@school.com</a></p>
+                    <p>Phone: <a href="tel:+2348012345678"> +234 801 234 5678</a></p>
+                </div>      
+            </div>
+
+            <div class="card">
+                <img src="images/pic 9.jpg" alt="">
+                <h3>Mr. Daniel Lee</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:daniel@school.com">daniel@school.com</a></p>
+                    <p>Phone:<a href="tel:+2348023456789"> +234 802 345 6789</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pic 10.jpg" alt="">
+                <h3>Dr. Sarah Johnson</h3>
+                <div class="info">
+                    <p>Email:<a href="mailto:sarah@school.com">sarah@school.com</a></p>
+                    <p>Phone:<a href="tel:+2348034567890"> +234 803 456 7890</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+
+    <!-- 🦶 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Computer Science Department</h3>
+                    <p>Empowering students with cutting-edge technology and innovative learning experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Courses.html" class="delphine">Courses</a></li>
+                        <li><a href="lecturers.html" class="delphine">Lecturers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"><a href="https://www.google.com/maps/search/?api=1&query=Ifatoss+University" target="_blank"  class="delphine"></i> Ifatoss University Campus</a></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+22956141425" class="delphine">+229 (01) 561-41425</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:IfatossUniversity@gmail.com" class="delphine">IfatossUniversity@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Computer Science Department. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook delphine"></i></a>
+                    <a href="#"><i class="fab fa-twitter delphine"></i></a>
+                    <a href="https://www.tiktok.com/@ifatossblog?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok delphine"></i></a>
+                    <a href="#"><i class="fab fa-linkedin delphine"></i></a>
+                    <a href="https://github.com/churchillmichael200-gif"><i class="fab fa-github delphine"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
