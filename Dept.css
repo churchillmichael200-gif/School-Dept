@@ -873,7 +873,7 @@ body.dark {
 .btn-outline {
     border: 2px solid var(--text-light);
     color: var(--shadow-sm);
-    background: var(--text-light);
+    background: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
